@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List App</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <section class="todo">
+        <h1>todos</h1>
+
+        <div class="add-bar">
+            <button class="btn" id="btn-complete-all"><img src="images/arrow-down-sign-to-navigate.png"
+                    alt="arrow-down"> </button>
+            <input type="text" placeholder="What needs to be done?" id="text-bar" class="input-field" />
+        </div>
+
+        <ul class="scroll">
+            <li class="todoList" id="todo_list"></li>
+        </ul>
+
+        <div class="utility">
+            <div class="counter-conteiner">
+                <p><span id="count">0</span> items left </p>
+            </div>
+            <div>
+                <select name="todos" class="filter-todos">
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="uncompleted">Uncompleted</option>
+                </select>
+            </div>
+            <div><button id="deleteButton">Delete All</button></div>
+            <div><button id="clearCompleted">Clear Completed</button></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <p class="made-by">Made By</p>
+            <p class="author">Lita Gabriel-Laurentiu</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
